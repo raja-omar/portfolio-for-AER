@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #fff;
+  color: #222;
+  line-height: 1.5;
+}
+
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 40px;
+  flex: 1;
+}
+
+main {
+  min-width: 0;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+.label {
+  font-size: 12px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.desc {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.links {
+  display: flex;
+  gap: 16px;
+}
+
+.links a {
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.arch-section {
+  margin-bottom: 25px;
+}
+
+.diagram-container {
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  padding: 15px;
+}
+
+.diagram {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.learnings {
+  padding-left: 18px;
+}
+
+.learnings li {
+  margin-bottom: 8px;
+  color: #444;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+aside {
+  border-left: 1px solid #eee;
+  padding-left: 25px;
+}
+
+.sidebar-section {
+  margin-bottom: 25px;
+}
+
+h3 {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.tech-label {
+  font-size: 11px;
+  color: #888;
+}
+
+.tech-item span:last-child {
+  font-size: 13px;
+  color: #333;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+}
+
+.features-list li {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 6px;
+  padding-left: 12px;
+  position: relative;
+}
+
+.features-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #ccc;
+}
+
+footer {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+  color: #888;
+  font-size: 13px;
+}
+
+@media (max-width: 700px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+  
+  aside {
+    border-left: none;
+    border-top: 1px solid #eee;
+    padding-left: 0;
+    padding-top: 20px;
+  }
+}
