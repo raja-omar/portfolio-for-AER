@@ -11,7 +11,7 @@ function App() {
             <p className="desc">I created this simple practice project to learn a few Azure services for the AER intern roles</p>
             <div className="links">
               <a href="https://witty-rock-0cda6d90f.1.azurestaticapps.net" target="_blank">Live Demo →</a>
-              <a href="https://github.com/raja-omar/ticket-management-AER" target="_blank">GitHub</a>
+              <a href="https://github.com/raja-omar/ticket-management-AER" target="_blank">Code Repository</a>
             </div>
           </header>
 
